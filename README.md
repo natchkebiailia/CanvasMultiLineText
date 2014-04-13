@@ -18,4 +18,6 @@ Examples of usage:
 <pre>drawMultiLineText(ctx,plainText,20,20,250,350,"15px georgia",false);</pre>
 <br>
 <pre>drawMultiLineText(ctx,plainText,20,400,700,200,"30px georgia",true);</pre>
+Result:
+========
 ![ScreenShot](https://raw.githubusercontent.com/natchkebiailia/CanvasMultiLineText/master/screenShot.PNG)
