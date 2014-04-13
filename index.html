@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Canvas Multile Text Demo Page</title>
+	<script src="canvasMultilineText.js" type="text/javascript"></script>
+</head>
+<body>
+	<canvas id="myCanvas" width=800 height=600 style="border: 1px solid black;"></canvas>
+</body>
+<script>
+var plainText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis velit, dictum pulvinar euismod in, commodo et justo. Nulla a nibh id nisi scelerisque bibendum. Curabitur lectus libero, bibendum in est sit amet, iaculis consequat lorem. Nam iaculis justo nec turpis viverra, a ultricies erat interdum. Aliquam erat mauris, laoreet non mattis sit amet, vestibulum id ligula. Donec dictum ultrices auctor. Suspendisse urna nibh, suscipit id eleifend vel, dignissim et risus. Pellentesque in massa vehicula, accumsan eros ut, pulvinar lacus. Sed in felis lectus. Nunc blandit tellus vel consectetur sodales. In hac habitasse platea dictumst. Donec vel varius massa. In elementum vel mauris varius mollis. In laoreet vitae urna eu auctor. Donec vitae molestie elit, ac malesuada ligula. Nunc sit amet tempus nisl, sed imperdiet mauris. Aliquam nibh leo, vehicula et tempus vel, gravida sit amet justo. Aenean eget ipsum est. Etiam vel pharetra nisl. Proin bibendum mi nec pharetra fringilla. Aenean consectetur erat dui, blandit convallis tortor eleifend sit amet. Nulla facilisi. Vestibulum eu vulputate purus, imperdiet interdum nibh. Pellentesque gravida arcu nec magna aliquam blandit. Duis tincidunt ut neque quis dapibus. Duis nec risus id massa vehicula gravida sit amet sed est. Etiam odio felis, laoreet non arcu et, laoreet viverra turpis. Nunc enim mauris, aliquam sed auctor eu, sagittis vel nulla. Pellentesque tincidunt leo ac libero blandit, quis volutpat nisi mollis. Phasellus sed congue libero. Integer ut faucibus nunc, ut egestas augue. Maecenas risus mi, volutpat ac lorem imperdiet, tristique vehicula nisl. Ut viverra tortor lectus. Nullam tellus turpis, sollicitudin eget neque vitae, laoreet dapibus metus. Nam varius molestie gravida. Aliquam vehicula volutpat eleifend. Cras quis sem purus. Sed enim neque, tristique ut cursus at, porttitor eget nunc. Ut egestas accumsan leo id posuere. Sed nec pellentesque eros. Donec ultrices sit amet turpis quis pretium. Vivamus accumsan libero elit, id ultricies nisi rutrum eget. Praesent ac libero arcu. Phasellus molestie, est ut condimentum elementum, turpis leo cursus enim, ac porttitor odio libero vel enim. Integer turpis sem, laoreet id lobortis at, lobortis sit amet eros."
+var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+
+drawMultiLineText(ctx,plainText,700,0,100,380);
+drawMultiLineText(ctx,plainText,280,30,350,300,"20px georgia");
+drawMultiLineText(ctx,plainText,20,20,250,350,"15px georgia",false);
+drawMultiLineText(ctx,plainText,20,400,700,200,"30px georgia",true);
+
+</script>
+</html>
